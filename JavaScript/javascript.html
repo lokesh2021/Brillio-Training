@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var word1 = "Hello";
+        var word2 = "Brillian";
+
+        function sayWelcome() {
+            var word1 = "welcome";
+            var word2 = "Brillio";
+            alert(word1 + " to " + word2 + "!!!"); // here the local variable takes precedence over a global variable'
+        }
+
+        function Operators() {
+            var a = 33;
+            var b = 10;
+            var c = "Test";
+            var linebreak = "<br />";
+
+            document.write("a + b = ");
+            result = a + b;
+            document.write(result);
+            document.write(linebreak);
+
+            document.write("a - b = ");
+            result = a - b;
+            document.write(result);
+            document.write(linebreak);
+
+            document.write("a / b = ");
+            result = a / b;
+            document.write(result);
+            document.write(linebreak);
+
+            document.write("a % b = ");
+            result = a % b;
+            document.write(result);
+            document.write(linebreak);
+
+            document.write("a + b + c = ");
+            result = a + b + c;
+            document.write(result);
+            document.write(linebreak);
+
+            a = ++a;
+            document.write("++a = ");
+            result = ++a;
+            document.write(result);
+            document.write(linebreak);
+
+            b = --b;
+            document.write("--b = ");
+            result = --b;
+            document.write(result);
+            document.write(linebreak);
+        }
+
+        function ifelse() {
+            var book = "maths";
+            if (book == "history") {
+                document.write("<b>History Book</b>");
+            } else if (book == "maths") {
+                document.write("<b>Maths Book</b>");
+            } else if (book == "economics") {
+                document.write("<b>Economics Book</b>");
+            } else {
+                document.write("<b>Unknown Book</b>");
+            }
+        }
+
+        function switchcase() {
+            var grade = 'A';
+            document.write("Entering switch block<br />");
+            switch (grade) {
+                case 'A': document.write("Good job<br />");
+                    break;
+                case 'B': document.write("Pretty good<br />");
+                    break;
+                case 'C': document.write("Passed<br />");
+                    break;
+                case 'D': document.write("Not so good<br />");
+                    break;
+                case 'F': document.write("Failed<br />");
+                    break;
+                default: document.write("Unknown grade<br />")
+            }
+            document.write("Exiting switch block");
+        }
+
+        function whileloop() {
+            var count = 0;
+            document.write("Starting Loop ");
+
+            while (count < 10) {
+                document.write("Current Count : " + count + "<br />");
+                count++;
+            }
+
+            document.write("Loop stopped!");
+        }
+
+        function forloop() {
+            var count;
+            document.write("Starting Loop" + "<br />");
+
+            for (count = 0; count < 10; count++) {
+                document.write("Current Count : " + count);
+                document.write("<br />");
+            }
+            document.write("Loop stopped!");
+        }
+
+        function forinloop() {
+            var aProperty;
+            document.write("Navigator Object Properties<br /> ");
+            for (aProperty in navigator) {
+                document.write(aProperty);
+                document.write("<br />");
+            }
+            document.write("Exiting from the loop!");
+        }
+
+        function loopcontrol() {
+            var x = 1;
+            document.write("Entering the loop<br /> ");
+
+            while (x < 20) {
+                if (x == 5) {
+                    break;   // breaks out of loop completely
+                }
+                x = x + 1;
+                document.write(x + "<br />");
+            }
+            document.write("Exiting the loop!<br /> ");
+        }
+        // Define a function which will work as a method
+        function addPrice(amount) {
+            this.price = amount;
+        }
+
+        function book(title, author) {
+            this.title = title;
+            this.author = author;
+            this.addPrice = addPrice;  // Assign that method as property.
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <script type="text/javascript">
+            document.write("<h2>Click the below button: The Below are JS Basics</h2>")
+        </script>
+        <br>
+        <input class="btn btn-default" type="button" onclick="sayWelcome()" value="Say Welcome" />
+        <input class="btn btn-default" type="button" onclick="Operators()" value="View Operators" />
+        <input class="btn btn-default" type="button" onclick="ifelse()" value="IfElse" />
+        <input class="btn btn-default" type="button" onclick="switchcase()" value="SwitchCase" />
+        <input class="btn btn-default" type="button" onclick="whileloop()" value="WhileLoop" />
+        <input class="btn btn-default" type="button" onclick="forloop()" value="forloop" />
+        <input class="btn btn-default" type="button" onclick="forinloop()" value="forinLoop" />
+        <input class="btn btn-default" type="button" onclick="loopcontrol()" value="LoopControl" />
+        <br>
+        <br>
+        <script type="text/javascript">
+            var myBook = new book("Brillio", "Lokesh");
+            myBook.addPrice(100);
+
+            document.write("Book title is : " + myBook.title + "<br>");
+            document.write("Book author is : " + myBook.author + "<br>");
+            document.write("Book price is : " + myBook.price + "<br>");
+            document.write("<br>")
+
+            var val = Number.MAX_VALUE;
+            document.write("Value of Number.MAX_VALUE : " + val);
+            document.write("<br>")
+            var flag = new Boolean(false);
+            document.write("flag.valueOf is : " + flag.valueOf());
+
+            document.write("<br>")
+            document.write("<br>")
+            var str = new String("Welcome to Brillio");
+            document.write("String is:" + str + ",  and its length is:" + str.length);
+            document.write("<br>")
+            document.write("String is:" + str + ",  and char at index 2 is: " + str.charAt(2));
+
+            document.write("<br>")
+            document.write("<br>")
+            var fruits = ["apple", "orange", "mango"];
+            document.write("Array Elements: ");
+            document.write("<br>")
+            for (i in fruits) {
+                document.write(fruits[i] + " is at " + i + " index");
+                document.write("<br>")
+
+            }
+
+            document.write("<br>")
+            var dt = Date();
+            document.write("Date and Time : " + dt);
+        </script>
+        <br>
+        <br>
+
+        <a class="btn btn-primary" href="../Assignments/Assignment3.html">JavaScript Assignment</a>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
