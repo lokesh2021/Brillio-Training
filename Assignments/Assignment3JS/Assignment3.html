@@ -13,14 +13,18 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        #num1, #num2{
+        #num1,
+        #num2 {
             display: inline;
             margin-left: 1rem;
         }
-        #year{
+
+        #year {
             display: inline;
         }
-        #mul, #div{
+
+        #mul,
+        #div {
             margin-left: 1rem;
         }
     </style>
@@ -30,44 +34,37 @@
             else if (year % 100 == 0) alert("Not a Leap Year");
             else alert("Not a Leap Year");
         }
-        function multiply(num1,num2)
-        {
-            alert("Multiple of "+num1+ " and "+num2+" is: "+num1*num2);
+        function multiply(num1, num2) {
+            alert("Multiple of " + num1 + " and " + num2 + " is: " + num1 * num2);
         }
-        function divide(num1,num2)
-        {
-            alert("Division of "+num1+  "and "+num2+" is: "+num1/num2);
+        function divide(num1, num2) {
+            alert("Division of " + num1 + "and " + num2 + " is: " + num1 / num2);
         }
-        function toCel(temp)
-        {
-            var Celsius = (temp-32)/1.8;
-            alert("Temperature in Celsius: "+Celsius)
+        function toCel(temp) {
+            var Celsius = (temp - 32) / 1.8;
+            alert("Temperature in Celsius: " + Celsius)
         }
-        function toFah(temp)
-        {
+        function toFah(temp) {
             var fahrenheit = (temp * 1.8) + 32
-            alert("Temperature in Fahrenheit: "+fahrenheit)
+            alert("Temperature in Fahrenheit: " + fahrenheit)
         }
-        function Guess(num)
-        {
+        function Guess(num) {
             var rand = Math.floor(Math.random() * 10) + 1;
-            if(num==rand) alert("Good Work :)");
+            if (num == rand) alert("Good Work :)");
             else alert("Not matched :(");
         }
-        function fifty(num1,num2)
-        {
-            if(num1==50||num2==50||num1+num2==50) alert("True");
+        function fifty(num1, num2) {
+            if (num1 == 50 || num2 == 50 || num1 + num2 == 50) alert("True");
             else alert("False");
         }
-        function posneg(num1,num2)
-        {
-            var sign1=Math.sign(num1);
-            var sign2=Math.sign(num2);
-            if(sign1==1) s1="Positive";
-            else s1="Negative"
-            if(sign2==1) s2="Positive";
-            else s2="Negative"
-            alert(num1+" sign is: "+s1+" and "+num2+" sign is: " +s2);
+        function posneg(num1, num2) {
+            var sign1 = Math.sign(num1);
+            var sign2 = Math.sign(num2);
+            if (sign1 == 1) s1 = "Positive";
+            else s1 = "Negative"
+            if (sign2 == 1) s2 = "Positive";
+            else s2 = "Negative"
+            alert(num1 + " sign is: " + s1 + " and " + num2 + " sign is: " + s2);
 
         }
     </script>
@@ -100,13 +97,13 @@
             else hour = h;
             document.write("Current time is: " + hour + " " + ampm + " : " + m + " : " + s);
         </script>
-
+        <br>
         <br>
         <br>
         <h4>Q2) Write a JavaScript program to print the contents of the current window.</h4>
         <h5><b>Solutuion: </b></h5>
         <input class="btn btn-primary" type="button" onclick="window.print();" value="Print Page Contents">
-
+        <br>
         <br>
         <br>
         <h4>Q3) Write a JavaScript program to get the current date.
@@ -123,6 +120,7 @@
 
         <br>
         <br>
+        <br>
         <h4>Q4) Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5,
             6, 7.</h4>
         <h5><b>Solutuion: </b></h5>
@@ -136,6 +134,7 @@
 
         <br>
         <br>
+        <br>
         <h4>Q5) Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.
         </h4>
         <h5><b>Solutuion: </b></h5>
@@ -144,14 +143,18 @@
 
         <br>
         <br>
+        <br>
         <h4>Q6)Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
         </h4>
         <h5><b>Solutuion: </b></h5>
         <input style="width: auto;" class="form-control" type="text" id="num1" placeholder="Enter Num1">
         <input style="width: auto;" class="form-control" type="text" id="num2" placeholder="Enter Num2">
-        <button class="btn btn-primary" id="mul" onclick=" multiply(Number(num1.value),Number(num2.value))">Multiply</button>
-        <button class="btn btn-primary" id="div" onclick=" divide(Number(num1.value),Number(num2.value))">Divide</button>
+        <button class="btn btn-primary" id="mul"
+            onclick=" multiply(Number(num1.value),Number(num2.value))">Multiply</button>
+        <button class="btn btn-primary" id="div"
+            onclick=" divide(Number(num1.value),Number(num2.value))">Divide</button>
 
+        <br>
         <br>
         <br>
         <h4>Q7)Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
@@ -164,7 +167,10 @@
 
         <br>
         <br>
-        <h4>Q8)Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched".
+        <br>
+        <h4>Q8)Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then
+            prompted to input a guess number. If the user input matches with guess number, the program will display a
+            message "Good Work" otherwise display a message "Not matched".
         </h4>
         <h5><b>Solutuion: </b></h5>
         <input style="width: auto;" class="form-control" type="text" id="num" placeholder="Enter a Number from 1-10">
@@ -173,7 +179,9 @@
 
         <br>
         <br>
-        <h4>Q9)Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.
+        <br>
+        <h4>Q9)Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if
+            their sum is 50.
         </h4>
         <h5><b>Solutuion: </b></h5>
         <input style="width: auto;" class="form-control" type="text" id="num11" placeholder="Enter a Number">
@@ -183,13 +191,19 @@
 
         <br>
         <br>
-        <h4>Q10)Write a JavaScript program to check from two given integers, whether one is positive and another one is negative.
+        <br>
+        <h4>Q10)Write a JavaScript program to check from two given integers, whether one is positive and another one is
+            negative.
         </h4>
         <h5><b>Solutuion: </b></h5>
         <input style="width: auto;" class="form-control" type="text" id="num111" placeholder="Enter a Number">
         <input style="width: auto;" class="form-control" type="text" id="num222" placeholder="Enter another Number">
         <div style="margin-top: 1rem;"></div>
         <button class="btn btn-primary" onclick=" posneg(Number(num111.value),Number(num222.value))">Check</button>
+        <br>
+        <br>
+        <br>
+
     </div>
 
 
