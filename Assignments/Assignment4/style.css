@@ -1,0 +1,55 @@
+.signin{
+    margin-top: 10rem;
+    width: 410px;
+    padding-top: 1pt;
+    background-color: rgb(68, 68, 97);
+}
+.register{
+    width: 400px;
+    margin-top: 5px;
+    background-color: lightgray;
+}
+
+hr{
+    width: 100px;
+    margin-top: 2rem;
+    background-color: black;
+}
+hr,h1{
+    display: inline-block;
+    
+}
+
+#fname, #lname{
+    margin-top: 1rem;
+    display: inline;
+    width: 170px;
+}
+#lname{
+    margin-left: 10px;
+}
+
+#email, #passwd, #cpasswd{
+    width: 350px;
+}
+.signin-atag{
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#checkbx, #tc{
+    display: inline;
+}
+span{
+    color: rgb(33, 141, 33);
+}
+#reg-btn{
+    margin-top: 2rem;
+    width: 350px;
+    margin-bottom: 4rem;
+}
+
+a{
+    color: white;
+}
