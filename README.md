@@ -1,3 +1,9 @@
 # Brillio Training- Full Stack Development using Java and React
 
-## **Assignments** folder: contains all the assignments that i have completed in training
+## Assignment 1: Welcome to Brillio Page
+
+## Assignment 2: Fruits and Vegetables Page
+
+## Assignment 3: JavaScript Basics 10/22Q
+
+## Assignment 4: Registration Page
