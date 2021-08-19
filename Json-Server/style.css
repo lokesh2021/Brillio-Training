@@ -1,0 +1,23 @@
+#empid, #empname, #empemail{
+    display: inline;
+    margin: 2px;
+}
+
+#empnum, #empdesg, #createemp{
+    display: inline;
+    margin: 2px;
+}
+
+#uempid, #uempname, #uempemail{
+    display: inline;
+    margin: 2px;
+}
+
+#uempnum, #uempdesg, #updateemp{
+    display: inline;
+    margin: 2px;
+}
+
+#eid1{
+    display: inline;
+}

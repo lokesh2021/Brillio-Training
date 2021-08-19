@@ -1,0 +1,18 @@
+{
+  "dept": [
+    {
+      "id": 1,
+      "name": "lok",
+      "email": "blr@gmail.com",
+      "num": 9123456789,
+      "role": "PPE"
+    },
+    {
+      "id": 2,
+      "name": "wttw",
+      "email": "Wgre",
+      "num": "435",
+      "role": "GRrg"
+    }
+  ]
+}
