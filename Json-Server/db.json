@@ -2,17 +2,31 @@
   "dept": [
     {
       "id": 1,
-      "name": "lok",
-      "email": "blr@gmail.com",
-      "num": 9123456789,
+      "name": "Lokesh",
+      "email": "lokesh.bm@brillio.com",
+      "num": "9123456789",
       "role": "PPE"
     },
     {
       "id": 2,
-      "name": "wttw",
-      "email": "Wgre",
-      "num": "435",
-      "role": "GRrg"
+      "name": "Ashish",
+      "email": "ashish.amar@brillio.com",
+      "num": "6835783873",
+      "role": "PPE"
+    },
+    {
+      "id": 3,
+      "name": "CK",
+      "email": "CK@brillio.com",
+      "num": "7373849373",
+      "role": "PPE"
+    },
+    {
+      "id": 4,
+      "name": "Rahul",
+      "email": "rahul@brillio.com",
+      "num": "2245252525",
+      "role": "PPE"
     }
   ]
 }
