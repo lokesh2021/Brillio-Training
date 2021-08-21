@@ -9,6 +9,8 @@ public class Demo {
 		obj.display();
 		obj=null;
 		System.gc();
+		obj1=null;
+		System.gc();
 	}
 
 }
