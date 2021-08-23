@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class NumbersToWords {
 
     /***************************************
-     * Copyright(C): Lokesh B M - Brillio  *
+     * Copyright(C):
+     * Ashish Amar
+     * Amit HS
+     * Lokesh B M
      * ************************************/
-
 
     public static void main(String[] args) {
 
