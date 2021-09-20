@@ -2,49 +2,39 @@ import React from "react";
 import { useState } from "react";
 //import "../css/main.css";
 
-export function Tables() {
-  let [num, setNum] = useState(0);
+export const Multiplicationtables = () => {
+  let [mynum, setMyNum] = useState(0);
 
-  const table = () => {
-    for (let i = 0; i < 11; i++) {}
+  let calculate = () => {
+    let htmlStr = "";
+
+    for (let i = 1; i < 11; i++) {
+      let eqStr = `${mynum} x ${i} = ${parseInt(mynum) * i}`;
+      htmlStr += eqStr + "<br/>";
+    }
+
+    document.getElementById("res").innerHTML = htmlStr;
   };
+
   return (
     <div>
-      <div className="container">
-        <div className="inner-container">
-          <h1>Math Table</h1>
-        </div>
-        <div className="inner-container">
-          <form>
-            <div className="inner-container">
-              <label for="num1">Enter Number</label>
-              <input
-                type="text"
-                id="num"
-                name="num"
-                onChange={(e) => {
-                  setNum(e.target.value);
-                }}
-              />
-            </div>
-
-            <div className="inner-container">
-              <label for="num3">Result: </label>
-              <input type="text" id="num1" name="num1" value={num1} />
-            </div>
-            <div className="inner-container">
-              <input
-                type="button"
-                className="button"
-                value="Display Table"
-                onClick={calculate}
-              />
-            </div>
-
-            <div></div>
-          </form>
-        </div>
+      <div>
+        <form>
+          <label for="mynum">Enter Number:: </label>
+          <input
+            type="text"
+            id="mynum"
+            name="mynum"
+            onChange={(e) => {
+              setMyNum(e.target.value);
+            }}
+          />
+          <br />
+          <input type="button" value="Generate" onClick={calculate} />
+          <br />
+          <div type="text" id="res"></div>
+        </form>
       </div>
     </div>
   );
-}
+};
