@@ -1,10 +1,19 @@
 import React from "react";
 import { useState } from "react";
 import "../css/counter.css";
+import ReusableButtonProps from "./reusablebuttonprops";
 
 export const Counter = () => {
+  const incCount = () => {
+    setNum(num + 1);
+  };
+
+  const decCount = () => {
+    setNum(num - 1);
+  };
+
   const f1 = () => {
-    if (num == 0) return "blue";
+    if (num === 0) return "blue";
     else if (num > 0) return "green";
     else if (num < 0) return "red";
   };
@@ -21,9 +30,24 @@ export const Counter = () => {
         <div className="inner-container">
           <div className={f1()}>{num}</div>
           <br />
-          <button onClick={() => setNum(num - 1)}>Decrease</button>
 
-          <button onClick={() => setNum(num + 1)}>Increase</button>
+          {/* IMPLEMENTING THE BELOW COMMENTED BUTTONS USING PROPS */}
+
+          <ReusableButtonProps handleClick={incCount} value="Increase Count" />
+          <ReusableButtonProps handleClick={decCount} value="Decrease Count" />
+
+          {/*                     
+                    <button onClick={
+                        () => setNum(num - 1)
+                    }
+                    >Decrease</button>
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <button onClick={
+                        () => setNum(num + 1)
+                    }
+                    >Increase</button> */}
         </div>
       </div>
     </div>

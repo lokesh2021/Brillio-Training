@@ -3,7 +3,7 @@ import "../css/main.css";
 
 class Add extends React.Component {
   state = {
-    num1: 0,
+    num1: 10,
     num2: 0,
     num3: 0,
   };
@@ -22,46 +22,44 @@ class Add extends React.Component {
       <div>
         <div className="container">
           <div className="inner-container">
-            <h1>Addition of 2 numbers</h1>
-          </div>
-          <div className="inner-container">
-            <form>
-              <div className="inner-container">
-                <label for="num1">Enter Number 1: </label>
+            <h1>Addition of 2 Nos</h1>
+
+            <div className="inner-container">
+              <form>
+                <label for="num1">Enter Number 1:: </label>
                 <input
-                  type="text"
+                  type="number"
                   id="num1"
                   name="num1"
                   onChange={this.setData}
                 />
-              </div>
-              <div className="inner-container">
-                <label for="num1">Enter Number 2: </label>
+
+                <br />
+                <label for="num2">Enter Number 2:: </label>
                 <input
-                  type="text"
+                  type="number"
                   id="num2"
                   name="num2"
                   onChange={this.setData}
                 />
-              </div>
-              <div className="inner-container">
-                <label for="num3">Result: </label>
+                <br />
+
+                <label for="num3">Result:: </label>
                 <input
-                  type="text"
+                  type="number"
                   id="num3"
                   name="num3"
                   value={this.state.num3}
                 />
-              </div>
-              <div className="inner-container">
+                <br />
+
                 <input
                   type="button"
-                  className="button"
                   value="Calculate"
                   onClick={this.calculate}
                 />
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
